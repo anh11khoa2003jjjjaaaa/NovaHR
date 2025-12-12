@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaHR.Domain", "NovaHR.Domain\NovaHR.Domain.csproj", "{8C91B530-C64B-424A-96C1-41E303E084AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C91B530-C64B-424A-96C1-41E303E084AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C91B530-C64B-424A-96C1-41E303E084AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C91B530-C64B-424A-96C1-41E303E084AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C91B530-C64B-424A-96C1-41E303E084AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99E2864C-97A4-435D-9B04-439AD7C5A994}
+	EndGlobalSection
+EndGlobal

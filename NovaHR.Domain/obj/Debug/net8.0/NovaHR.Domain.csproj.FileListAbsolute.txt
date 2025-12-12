@@ -1,0 +1,11 @@
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\bin\Debug\net8.0\NovaHR.Domain.deps.json
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\bin\Debug\net8.0\NovaHR.Domain.dll
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\bin\Debug\net8.0\NovaHR.Domain.pdb
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.AssemblyInfoInputs.cache
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.AssemblyInfo.cs
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.csproj.CoreCompileInputs.cache
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.dll
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\refint\NovaHR.Domain.dll
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.pdb
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\ref\NovaHR.Domain.dll

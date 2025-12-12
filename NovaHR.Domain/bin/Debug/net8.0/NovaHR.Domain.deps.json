@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NovaHR.Domain/1.0.0": {
+        "runtime": {
+          "NovaHR.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NovaHR.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
