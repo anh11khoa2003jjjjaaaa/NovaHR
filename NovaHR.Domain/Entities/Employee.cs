@@ -10,7 +10,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Employee : BaseEntity, IAuditableEntity, ISoftDelete
+    public class Employee : AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -41,17 +41,11 @@ namespace NovaHR.Domain.Entities
         // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
         // -------------------------
         public EmployeeStatus EmployeeStatus { get; private set; } = EmployeeStatus.Active;
-        public bool IsDeleted { get; set; }
+        
 
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
 
         private Employee() { } // EF dùng
 
@@ -104,11 +98,7 @@ namespace NovaHR.Domain.Entities
             Touch(UpdatedBy ?? Guid.Empty);
         }
 
-        private void Touch(Guid userId)
-        {
-            UpdatedAt = DateTime.UtcNow;
-            UpdatedBy = userId;
-        }
+        
     }
 }
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NovaHR.Domain.Entities
 {
-    public class EmployeeSalary : BaseEntity, IAuditableEntity, ISoftDelete
+    public class EmployeeSalary : AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -42,14 +42,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
-
+        
         protected EmployeeSalary() { }
 
         public EmployeeSalary(Guid employeeId, SalaryType salaryType, decimal amount, DateTime effectiveDate)

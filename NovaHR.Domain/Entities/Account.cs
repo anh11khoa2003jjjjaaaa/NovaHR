@@ -9,7 +9,7 @@ using NovaHR.Domain.Interfaces;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Account: BaseEntity, IAuditableEntity, ISoftDelete
+    public class Account: AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -39,14 +39,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
-
+       
         private Account() { }
 
         public Account(string username, string passwordHash, Guid userId, Guid createdBy)
@@ -107,21 +100,6 @@ namespace NovaHR.Domain.Entities
             AccountStatus = AccountStatus.Inactive;
             Touch(deactivatedBy);
         }
-
-        public void SoftDelete(Guid deletedBy)
-        {
-            IsDeleted = true;
-            DeletedAt = DateTime.UtcNow;
-            DeletedBy = deletedBy;
-            Touch(deletedBy);
-        }
-
-        private void Touch(Guid userId)
-        {
-            UpdatedAt = DateTime.UtcNow;
-            UpdatedBy = userId;
-        }
-
         private string GenerateCodeAccount(DateTime createdAt)
         {
             string datePart = $"{createdAt.Day}{createdAt.Month}{createdAt.Year}";

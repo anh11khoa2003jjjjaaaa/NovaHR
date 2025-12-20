@@ -4,7 +4,7 @@ using NovaHR.Domain.Interfaces; // Assumed existence
 
 namespace NovaHR.Domain.Entities
 {
-    public class PayrollRecord : BaseEntity, IAuditableEntity, ISoftDelete
+    public class PayrollRecord : AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -38,13 +38,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
+      
 
         protected PayrollRecord() { }
 

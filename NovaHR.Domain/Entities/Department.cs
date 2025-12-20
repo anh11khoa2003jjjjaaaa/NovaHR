@@ -4,7 +4,7 @@ using NovaHR.Domain.Interfaces;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Department : BaseEntity, IAuditableEntity, ISoftDelete
+    public class Department : AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -31,13 +31,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
+        
 
         // ===== EF Core Contructor =====
         protected Department() { }
@@ -112,10 +106,6 @@ namespace NovaHR.Domain.Entities
             Touch(userId);
         }
 
-        private void Touch(Guid userId)
-        {
-            UpdatedAt = DateTime.UtcNow;
-            UpdatedBy = userId;
-        }
+        
     }
 }

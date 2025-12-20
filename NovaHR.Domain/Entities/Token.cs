@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Token: BaseEntity, IAuditableEntity, ISoftDelete
+    public class Token: AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
@@ -37,14 +37,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public Guid CreatedBy { get; set; }
-        public Guid? UpdatedBy { get; set; }
-
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedAt { get; set; }
-        public Guid? DeletedBy { get; set; }
+         
 
         public Token() { }
 
