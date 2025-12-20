@@ -9,3 +9,4 @@ D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.
 D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\refint\NovaHR.Domain.dll
 D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.pdb
 D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\ref\NovaHR.Domain.dll
+D:\Project\MyProject\Csharp\NovaHR\NovaHR.Domain\obj\Debug\net8.0\NovaHR.Domain.sourcelink.json

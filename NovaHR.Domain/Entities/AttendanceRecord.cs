@@ -1,14 +1,16 @@
 ﻿using NovaHR.Domain.Enums;
 using NovaHR.Domain.Exceptions;
+using NovaHR.Domain.Interfaces;
 
 namespace NovaHR.Domain.Entities
 {
-    public class AttendanceRecord
+    public class AttendanceRecord : BaseEntity,IAuditableEntity, ISoftDelete
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
         // -------------------------
-        public Guid Id { get; private set; }
+        // Id inherited from BaseEntity
+        
         public string Code { get; private set; } = null!;
 
         // -------------------------
@@ -37,13 +39,18 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
         // -------------------------
-        public bool IsDeleted { get; private set; } = false;
+        // (Moved IsDeleted to Rule 5)
 
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public Guid CreatedBy { get; set; }
+        public Guid? UpdatedBy { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public Guid? DeletedBy { get; set; }
 
         // =======================================================
         // Constructor bảo vệ (protected) cho ORM
@@ -61,13 +68,14 @@ namespace NovaHR.Domain.Entities
         {
             var record = new AttendanceRecord
             {
-                Id = Guid.NewGuid(),
+               
                 EmployeeId = employeeId,
                 ShiftId = shiftId,
                 CheckInTime = checkInTime,
                 Status = AttendanceRecordStatus.Present,
                 Code = GenerateCodeStatic(),
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                IsDeleted = false
             };
 
             record.CalculateLateMinutes(shift);

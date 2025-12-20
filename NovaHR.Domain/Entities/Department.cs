@@ -1,29 +1,43 @@
 ﻿using NovaHR.Domain.Enums;
 using NovaHR.Domain.Exceptions;
+using NovaHR.Domain.Interfaces;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Department
+    public class Department : BaseEntity, IAuditableEntity, ISoftDelete
     {
-        // ==== Rule 1: Identity ====
-        public Guid Id { get; private set; }
+        // -------------------------
+        // 1. Quy tắc 1: Danh tính (Identity)
+        // -------------------------
+        // Inherited Id from BaseEntity
         public string Code { get; private set; } = null!;
+
+        // -------------------------
+        // 2. Quy tắc 2: Mô tả bản chất Entity
+        // -------------------------
         public string DepartmentName { get; private set; } = null!;
         public string Description { get; private set; } = null!;
 
-        // ==== Rule 2: Aggregate relationships ====
-        private readonly List<Employee> _employees = new();
-        public IReadOnlyCollection<Employee> Employees => _employees.AsReadOnly();
+        // -------------------------
+        // 3. Quy tắc 3: Quan hệ / Foreign Keys
+        // -------------------------
+        public ICollection<Employee> Employees { get; private set; } = new List<Employee>();
 
-        // ==== Rule 3: Business attributes ====
+        // -------------------------
+        // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
+        // -------------------------
         public DepartmentStatus Status { get; private set; } = DepartmentStatus.Active;
 
-        // ==== Rule 4: Audit fields ====
-        public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
-        public Guid CreatedBy { get; private set; }
-        public Guid UpdatedBy { get; private set; }
-
+        // -------------------------
+        // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
+        // -------------------------
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+        public Guid CreatedBy { get; set; }
+        public Guid? UpdatedBy { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public Guid? DeletedBy { get; set; }
 
         // ===== EF Core Contructor =====
         protected Department() { }
@@ -37,9 +51,14 @@ namespace NovaHR.Domain.Entities
 
             CreatedBy = createdBy;
             UpdatedBy = createdBy;
+            CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
+            IsDeleted = false;
         }
 
-        // ===== Behavior Methods =====
+        // =======================================================
+        // Behavior Methods
+        // =======================================================
 
         public void SetName(string name)
         {
@@ -47,7 +66,7 @@ namespace NovaHR.Domain.Entities
                 throw new DomainException("Department name cannot be empty");
 
             DepartmentName = name.Trim();
-            Touch(UpdatedBy);
+            Touch(UpdatedBy ?? Guid.Empty);
         }
 
         public void SetCode(string code)
@@ -65,20 +84,19 @@ namespace NovaHR.Domain.Entities
         {
             if (employee == null) throw new DomainException("Invalid employee");
 
-            // Rule: A department cannot contain duplicate employees
-            if (_employees.Any(e => e.Id == employee.Id))
+            if (Employees.Any(e => e.Id == employee.Id))
                 throw new DomainException("Employee already exists in this department");
 
-            _employees.Add(employee);
+            Employees.Add(employee);
             Touch(userId);
         }
 
         public void RemoveEmployee(Guid employeeId, Guid userId)
         {
-            var emp = _employees.FirstOrDefault(e => e.Id == employeeId);
+            var emp = Employees.FirstOrDefault(e => e.Id == employeeId);
             if (emp == null) throw new DomainException("Employee not found");
 
-            _employees.Remove(emp);
+            Employees.Remove(emp);
             Touch(userId);
         }
 

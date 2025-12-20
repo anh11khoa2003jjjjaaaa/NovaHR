@@ -1,12 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NovaHR.Domain.Exceptions;
+using NovaHR.Domain.Interfaces;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Roles
+    // Rename class Roles -> Role (Singular is standard for Entities)
+    public class Role : BaseEntity, IAuditableEntity, ISoftDelete
     {
+        // -------------------------
+        // 1. Quy tắc 1: Danh tính (Identity)
+        // -------------------------
+        // Inherited Id
+
+        // -------------------------
+        // 2. Quy tắc 2: Mô tả bản chất Entity
+        // -------------------------
+        public string Name { get; private set; } = null!;
+        public string Code { get; private set; } = null!;
+        public string? Description { get; private set; }
+
+        // -------------------------
+        // 3. Quy tắc 3: Quan hệ / Foreign Keys
+        // -------------------------
+        // Có thể thêm List<Permission> Permissions { get; private set; } sau này
+
+        // -------------------------
+        // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
+        // -------------------------
+        // (Empty)
+
+        // -------------------------
+        // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
+        // -------------------------
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
+        public Guid CreatedBy { get; set; }
+        public Guid? UpdatedBy { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public Guid? DeletedBy { get; set; }
+
+        protected Role() { }
+
+        public Role(string code, string name)
+        {
+            SetCode(code);
+            SetName(name);
+            CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
+            IsDeleted = false;
+        }
+
+        public void SetName(string name)
+        {
+             if (string.IsNullOrWhiteSpace(name)) throw new DomainException("Tên Role bắt buộc");
+             Name = name.Trim();
+             UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void SetCode(string code)
+        {
+            if (string.IsNullOrWhiteSpace(code)) throw new DomainException("Mã Role bắt buộc");
+            Code = code.Trim().ToUpper();
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

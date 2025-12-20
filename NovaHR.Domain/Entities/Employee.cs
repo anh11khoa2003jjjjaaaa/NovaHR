@@ -1,5 +1,6 @@
 ﻿using NovaHR.Domain.Enums;
 using NovaHR.Domain.Exceptions;
+using NovaHR.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,17 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Employee
+    public class Employee : BaseEntity, IAuditableEntity, ISoftDelete
     {
-        // Quy tắc 1: Entity
-        public Guid Id { get; private set; }
+        // -------------------------
+        // 1. Quy tắc 1: Danh tính (Identity)
+        // -------------------------
+        // BaseEntity đã có Id
         public string Code { get; private set; } = null!;
 
-        // Quy tắc 2: Mô tả bản chất của entity
+        // -------------------------
+        // 2. Quy tắc 2: Mô tả bản chất Entity
+        // -------------------------
         public string FullName { get; private set; } = null!;
         public string Email { get; private set; } = null!;
         public Gender Gender { get; private set; }
@@ -23,24 +28,30 @@ namespace NovaHR.Domain.Entities
         public DateTime JoinDate { get; private set; }
         public string EducationLevel { get; private set; } = null!;
 
-        // Quy tắc 3: Quan hệ
+        // -------------------------
+        // 3. Quy tắc 3: Quan hệ / Foreign Keys
+        // -------------------------
         public Guid DepartmentId { get; private set; }
         public Guid PositionId { get; private set; }
         public Position Position { get; private set; } = null!;
         public Department Department { get; private set; } = null!;
-        public List<EmployeeSalary> EmployeeSalaries { get; private set; } = new();
+        public ICollection<EmployeeSalary> EmployeeSalaries { get; private set; } = new List<EmployeeSalary>();
 
-        // Quy tắc 4: Thuộc tính thuộc domain business
+        // -------------------------
+        // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
+        // -------------------------
         public EmployeeStatus EmployeeStatus { get; private set; } = EmployeeStatus.Active;
+        public bool IsDeleted { get; set; }
 
-        // Quy tắc 5: Thuộc tính hệ thống
-        public DateTime CreatedAt { get; private set; }
-        public DateTime UpdatedAt { get; private set; }
-        public Guid CreatedBy { get; private set; }
-        public Guid UpdatedBy { get; private set; }
-        public bool IsDeleted { get; private set; }
-
-        private static int _lastDigit = 1;
+        // -------------------------
+        // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
+        // -------------------------
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public Guid CreatedBy { get; set; }
+        public Guid? UpdatedBy { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public Guid? DeletedBy { get; set; }
 
         private Employee() { } // EF dùng
 
@@ -48,7 +59,6 @@ namespace NovaHR.Domain.Entities
         {
             ValidateBasic(fullname, email, gender, dateofbirth, joindate);
 
-            Id = Guid.NewGuid();
             Code = GenerateCodeEmployee(fullname, joindate);
 
             SetFullName(fullname);
@@ -70,40 +80,28 @@ namespace NovaHR.Domain.Entities
                 .Select(a => char.ToUpper(a[0])));
 
             string date = $"{joindate.Day}{joindate.Month}";
-            string code = $"{initials}{date}{_lastDigit}";
-
-            _lastDigit++;
+            
+            // [FIXED] Dùng Random Number thay vì static int
+            var randomPart = new Random().Next(1000, 9999); 
+            string code = $"{initials}{date}{randomPart}";
 
             return code;
         }
 
         private void ValidateBasic(string fullname, string email, Gender gender, DateTime dob, DateTime joinDate)
         {
-            if (string.IsNullOrWhiteSpace(fullname))
-                throw new DomainException("FullName is required");
-
-            if (!email.Contains("@"))
-                throw new DomainException("Email is invalid");
-
-            if (dob > DateTime.UtcNow)
-                throw new DomainException("Date of birth is invalid.");
-
-            if (joinDate < dob)
-                throw new DomainException("Join date cannot be before date of birth");
-
-            if (!Enum.IsDefined(typeof(Gender), gender))
-                throw new DomainException("Invalid gender");
-
-
+            if (string.IsNullOrWhiteSpace(fullname)) throw new DomainException("FullName is required");
+            if (!email.Contains("@")) throw new DomainException("Email is invalid");
+            if (dob > DateTime.UtcNow) throw new DomainException("Date of birth is invalid.");
+            if (joinDate < dob) throw new DomainException("Join date cannot be before date of birth");
+            if (!Enum.IsDefined(typeof(Gender), gender)) throw new DomainException("Invalid gender");
         }
 
         private void SetFullName(string fullname)
         {
             if (string.IsNullOrWhiteSpace(fullname)) throw new DomainException("FullName is not empty!");
-             FullName=fullname.Trim();
-            Touch(UpdatedBy);
-
-
+            FullName = fullname.Trim();
+            Touch(UpdatedBy ?? Guid.Empty);
         }
 
         private void Touch(Guid userId)
@@ -112,7 +110,5 @@ namespace NovaHR.Domain.Entities
             UpdatedBy = userId;
         }
     }
-
-
 }
 
