@@ -2,6 +2,7 @@
 using NovaHR.Domain.Exceptions;
 using NovaHR.Domain.Interfaces;
 
+
 namespace NovaHR.Domain.Entities
 {
     public class AttendanceRecord : AuditableEntity
@@ -10,7 +11,7 @@ namespace NovaHR.Domain.Entities
         // 1. Quy tắc 1: Danh tính (Identity)
         // -------------------------
         // Id inherited from BaseEntity
-        
+
         public string Code { get; private set; } = null!;
 
         // -------------------------
@@ -18,11 +19,12 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         public DateTime CheckInTime { get; private set; }
         public DateTime? CheckOutTime { get; private set; }
-
+        //Ngày chấm công là WorkDate
+        public DateTime WorkDate { get; private set; }
         public int LateMinutes { get; private set; }
+        public bool IsLate => LateMinutes > 0;
         public int EarlyLeaveMinutes { get; private set; }
         public int WorkMinutes { get; private set; }
-
         public AttendanceRecordStatus Status { get; private set; }
 
         // -------------------------
@@ -30,21 +32,30 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         public Guid EmployeeId { get; private set; }
         public Employee Employee { get; private set; } = null!;
-
         public Guid ShiftId { get; private set; }
         public Shift Shift { get; private set; } = null!;
-
         public Guid? ApprovedBy { get; private set; }
 
         // -------------------------
         // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
-        // -------------------------
-        // (Moved IsDeleted to Rule 5)
+        public decimal TotalHours
+        {
+            get
+            {
+                if (CheckOutTime == null)
+
+                    throw new DomainException("Chưa check-out, không thể tính TotalHours");
+
+                return Math.Round(WorkMinutes / 60.0m, 2);
+
+            }
+        }
+
 
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        
+
 
         // =======================================================
         // Constructor bảo vệ (protected) cho ORM
@@ -62,7 +73,7 @@ namespace NovaHR.Domain.Entities
         {
             var record = new AttendanceRecord
             {
-               
+
                 EmployeeId = employeeId,
                 ShiftId = shiftId,
                 CheckInTime = checkInTime,
@@ -112,20 +123,36 @@ namespace NovaHR.Domain.Entities
         // =======================================================
         private void CalculateLateMinutes(Shift shift)
         {
-            if (CheckInTime <= shift.StartTime)
+            //Lấy thời gian kết thúc của ngày làm việc
+            //DateTime shiftEnd = GetShiftEndDateTime(WorkDate.Date, shift);
+            DateTime shiftStart = GetShiftStartDateTime(WorkDate.Date, shift);
+
+            //Kiểm tra nếu như mà thời gian điểm danh<= kết thúc ca thì không có đi trễ. Đi trễ thì ngược lại
+
+            if (CheckInTime <= shiftStart)
                 LateMinutes = 0;
             else
-                LateMinutes = (int)(CheckInTime - shift.StartTime).TotalMinutes;
+                LateMinutes = (int)(CheckInTime - shiftStart).TotalMinutes;
+        }
+        public DateTime GetShiftEndDateTime(DateTime datework, Shift shift)
+        {
+            return shift.EndTime > shift.StartTime ? datework.Date + shift.EndTime : datework.AddDays(1) + shift.EndTime;
+        }
+
+        public DateTime GetShiftStartDateTime(DateTime workDate, Shift shift)
+        {
+            return workDate.Date + shift.StartTime;
         }
 
         private void CalculateEarlyLeaveMinutes(Shift shift)
         {
+            DateTime shiftTime = WorkDate.Date + shift.EndTime;
             if (CheckOutTime == null) return;
 
-            if (CheckOutTime >= shift.EndTime)
+            if (CheckOutTime >= shiftTime)
                 EarlyLeaveMinutes = 0;
             else
-                EarlyLeaveMinutes = (int)(shift.EndTime - CheckOutTime.Value).TotalMinutes;
+                EarlyLeaveMinutes = (int)(shiftTime - CheckOutTime.Value).TotalMinutes;
         }
 
         private void CalculateWorkMinutes(Shift shift)
@@ -137,6 +164,18 @@ namespace NovaHR.Domain.Entities
                           - LateMinutes
                           - EarlyLeaveMinutes
                           - shift.BreakMinutes;
+        }
+
+        public decimal CalculateDayWorking()
+        {
+
+            if (CheckOutTime == null) throw new DomainException("Chưa tính số ngày làm việc được vì chưa checkout");
+            decimal hour = WorkMinutes / 60.0m;// Lấy số giờ làm việc
+            decimal HoursStandant = 8m;// Mốc thời gian hành chính 8 tiếng
+            decimal days = hour / HoursStandant;// Tính số ngày làm việc
+            return Math.Min(Math.Round(days, 2), 1m);// lấy giá trị nhỏ nhất và làm tròn 2 chữ số
+
+
         }
 
         // =======================================================

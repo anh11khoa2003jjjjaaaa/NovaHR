@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using NovaHR.Domain.Exceptions;
 using NovaHR.Domain.Interfaces;
 
+
 namespace NovaHR.Domain.Entities
 {
     public class Account: AuditableEntity

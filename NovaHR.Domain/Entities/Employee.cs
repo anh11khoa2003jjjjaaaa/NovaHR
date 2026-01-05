@@ -1,6 +1,7 @@
 ﻿using NovaHR.Domain.Enums;
 using NovaHR.Domain.Exceptions;
 using NovaHR.Domain.Interfaces;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,11 @@ namespace NovaHR.Domain.Entities
         public DateTime DateOfBirth { get; private set; }
         public DateTime JoinDate { get; private set; }
         public string EducationLevel { get; private set; } = null!;
+        public decimal BaseSalary { get; set; }
+        public decimal CurrentBaseSalary => EmployeeSalaries
+   .Where(s => s.EndDate == null)
+   .Select(s => s.EffectiveBaseAmount)
+   .FirstOrDefault();
 
         // -------------------------
         // 3. Quy tắc 3: Quan hệ / Foreign Keys
@@ -41,7 +47,7 @@ namespace NovaHR.Domain.Entities
         // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
         // -------------------------
         public EmployeeStatus EmployeeStatus { get; private set; } = EmployeeStatus.Active;
-        
+
 
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
@@ -74,9 +80,9 @@ namespace NovaHR.Domain.Entities
                 .Select(a => char.ToUpper(a[0])));
 
             string date = $"{joindate.Day}{joindate.Month}";
-            
+
             // [FIXED] Dùng Random Number thay vì static int
-            var randomPart = new Random().Next(1000, 9999); 
+            var randomPart = new Random().Next(1000, 9999);
             string code = $"{initials}{date}{randomPart}";
 
             return code;
@@ -98,7 +104,7 @@ namespace NovaHR.Domain.Entities
             Touch(UpdatedBy ?? Guid.Empty);
         }
 
-        
+
     }
 }
 

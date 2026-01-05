@@ -9,25 +9,27 @@ using System.Threading.Tasks;
 
 namespace NovaHR.Domain.Entities
 {
-    public class Token: AuditableEntity
+    public class Token : AuditableEntity
     {
         // -------------------------
         // 1. Quy tắc 1: Danh tính (Identity)
         // -------------------------
         // Rule 1: Identity (Inherited)
-        
+
         // -------------------------
         // 2. Quy tắc 2: Mô tả bản chất Entity
         // -------------------------
         public DateTime IssuedAt { get; private set; }
         public DateTime ExpiresAt { get; private set; }
         public DateTime RefreshExpiresAt { get; private set; } // Renamed from Presfesh
-        
+
         // -------------------------
         // 3. Quy tắc 3: Quan hệ / Foreign Keys
         // -------------------------
         public Guid UserId { get; private set; }
+
         public User? User { get; private set; } = null;
+        public AttendanceRecordStatus Type { get; private set; }
 
         // -------------------------
         // 4. Quy tắc 4: Thuộc tính phục vụ hành vi / nghiệp vụ
@@ -37,7 +39,7 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-         
+
 
         public Token() { }
 
@@ -45,14 +47,14 @@ namespace NovaHR.Domain.Entities
         {
             if (userId == Guid.Empty) throw new DomainException("UserId là bắt buộc");
             if (createdBy == Guid.Empty) throw new DomainException("CreatedBy là bắt buộc");
-            
+
             IssuedAt = issuedAt;
             ExpiresAt = expiresAt;
             RefreshExpiresAt = refreshExpiresAt; // Fixed typo
             UserId = userId;
             TokenStatus = TokenStatus.Active;
-            
-            CreatedAt = DateTime.UtcNow;        
+
+            CreatedAt = DateTime.UtcNow;
             CreatedBy = createdBy;
             IsDeleted = false;
         }
@@ -68,5 +70,16 @@ namespace NovaHR.Domain.Entities
             TokenStatus = TokenStatus.Expired;
             UpdatedAt = DateTime.UtcNow;
         }
+
+        public static Token GenerateQRCode(AttendanceRecordStatus type)
+        {
+            return new Token
+            {
+                Type = type,
+                ExpiresAt = DateTime.UtcNow.AddSeconds(30)
+            };
+        }
+
+
     }
 }

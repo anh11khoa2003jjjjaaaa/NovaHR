@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NovaHR.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fab4f229d42aee98173c1c987c4eb25a22981531")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82370f15b9758ff0dd0679301350bc0d2fa33139")]
 [assembly: System.Reflection.AssemblyProductAttribute("NovaHR.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NovaHR.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

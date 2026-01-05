@@ -1,4 +1,6 @@
-﻿namespace NovaHR.Domain.Interfaces
+﻿using NovaHR.Domain.Extensions;
+
+namespace NovaHR.Domain.Interfaces
 {
     // BaseEntity đại diện cho khái niệm "thực thể nghiệp vụ của hệ thống"
     // Mọi entity trong domain đều có định danh (Id)
@@ -19,6 +21,6 @@
     public abstract class BaseEntity
     {
         public Guid Id { get; private set; } = Guid.NewGuid();
-       
+
     }
 }

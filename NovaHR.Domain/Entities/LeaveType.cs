@@ -1,6 +1,7 @@
 ﻿using NovaHR.Domain.Exceptions;
 using NovaHR.Domain.Interfaces;
 
+
 namespace NovaHR.Domain.Entities
 {
     public class LeaveType : AuditableEntity

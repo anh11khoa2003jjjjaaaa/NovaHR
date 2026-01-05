@@ -1,11 +1,13 @@
 ﻿using NovaHR.Domain.Enums;
 using NovaHR.Domain.Exceptions;
-using NovaHR.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NovaHR.Domain.Interfaces;
+using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography;
 
 namespace NovaHR.Domain.Entities
 {
@@ -21,9 +23,12 @@ namespace NovaHR.Domain.Entities
         // 2. Quy tắc 2: Mô tả bản chất Entity
         // -------------------------
         public SalaryType SalaryType { get; private set; } // [Standardized] Enum
-        public decimal BaseAmount { get; private set; }
-        public string Currency { get; private set; } = "VND";
-        
+        //Lương gốc
+        public decimal FullBaseAmount { get; private set; }
+        //Lương áp dụng để trả lương
+        public decimal EffectiveBaseAmount => ProbationPercent.HasValue ? Math.Round(FullBaseAmount * ProbationPercent.Value / 100, 2) : FullBaseAmount;
+        //public string Currency { get; private set; } = "VND";
+
         public DateTime EffectiveDate { get; private set; }         // Bắt đầu áp dụng
         public DateTime? EndDate { get; private set; }              // NULL = còn hiệu lực
         public decimal? ProbationPercent { get; private set; }      // 85% nếu đang thử việc
@@ -42,32 +47,45 @@ namespace NovaHR.Domain.Entities
         // -------------------------
         // 5. Quy tắc 5: Thuộc tính hệ thống (Audit)
         // -------------------------
-        
+
         protected EmployeeSalary() { }
 
-        public EmployeeSalary(Guid employeeId, SalaryType salaryType, decimal amount, DateTime effectiveDate)
+        public EmployeeSalary(Guid employeeId, decimal fullBaseAmount, SalaryType salaryType, DateTime effectiveDate, decimal? probationPercent)
         {
-            if (amount < 0) throw new DomainException("Lương không được âm");
-            
+
+
             EmployeeId = employeeId;
             SalaryType = salaryType;
-            BaseAmount = amount;
             EffectiveDate = effectiveDate;
-            
+            FullBaseAmount = fullBaseAmount;
             Code = $"SAL-{Guid.NewGuid().ToString("N")[..8].ToUpper()}";
+            ProbationPercent = probationPercent > 0 ? probationPercent : null;
+            EndDate = null;
             CreatedAt = DateTime.UtcNow;
             UpdatedAt = DateTime.UtcNow;
             IsDeleted = false;
         }
 
-        // Behavior: Update Amount
-        public void UpdateAmount(decimal newAmount)
+        public void ApplyNewSalary(Employee employee, SalaryType salaryType, decimal fullAmountSalary, DateTime effectiveDate, decimal? probationPrecent = null)
         {
-            if (newAmount < 0) throw new DomainException("Lương không được âm");
-            BaseAmount = newAmount;
-            UpdatedAt = DateTime.UtcNow;
-        }
+            var activeSalaries = employee.EmployeeSalaries.Where(e => e.EndDate == null).ToList();
+            if (activeSalaries.Count > 1)
+            {
+                var errorMessage = $"DATA INTEGRITY VIOLATION: Employee {Id} has {activeSalaries.Count} active salary records. " +
+                           $"Ids: {string.Join(", ", activeSalaries.Select(s => s.Id))}. " +
+                           $"This should never happen. Immediate investigation required.";
+                throw new InvalidOperationException(errorMessage);
+            }
+            var current = activeSalaries.FirstOrDefault();
+            if (current != null)
+            {
+                current.Terminate(EffectiveDate);
+            }
 
+
+            var newSalary = new EmployeeSalary(employeeId: employee.Id, fullAmountSalary, salaryType: SalaryType.Monthly, effectiveDate, probationPrecent);
+            employee.EmployeeSalaries.Add(newSalary);
+        }
         // Behavior: Terminate Salary (End)
         public void Terminate(DateTime endDate)
         {

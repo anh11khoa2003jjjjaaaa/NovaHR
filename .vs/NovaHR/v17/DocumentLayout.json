@@ -3,100 +3,68 @@
   "WorkspaceRootPath": "D:\\Project\\MyProject\\Csharp\\NovaHR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\interfaces\\rules\\rulekpiscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\rules\\rulekpiscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\interfaces\\services\\payrollengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\services\\payrollengineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\interfaces\\rules\\ruleovertime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\rules\\ruleovertime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\rules\\ipayrollrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\rules\\ipayrollrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\rules\\rulelatepenalty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\rules\\rulelatepenalty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\payrollrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\payrollrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\abstractions\\payrollrulebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\abstractions\\payrollrulebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\payrolldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\payrolldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\leavetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\abstractions\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\abstractions\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\abstractions\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\abstractions\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\employeeleavebalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\employeeleavebalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\employeesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\employeesalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\shift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\employeeleavebalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\employeeleavebalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\attendancerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\auditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\enums\\departmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\enums\\departmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\enums\\attendancerecordstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\enums\\attendancerecordstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\enums\\attendancerecordstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\iauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\iauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\interfaces\\isoftdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\interfaces\\isoftdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|D:\\Project\\MyProject\\Csharp\\NovaHR\\novahr.domain\\enums\\tokenstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\enums\\tokenstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|d:\\project\\myproject\\csharp\\novahr\\novahr.domain\\entities\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C91B530-C64B-424A-96C1-41E303E084AD}|NovaHR.Domain\\NovaHR.Domain.csproj|solutionrelative:novahr.domain\\entities\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 365,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,308 +138,211 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LeaveRequest.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\LeaveRequest.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\LeaveRequest.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\LeaveRequest.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\LeaveRequest.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAA2wCQAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:50:45.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LeaveType.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\LeaveType.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\LeaveType.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\LeaveType.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\LeaveType.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowCAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T03:03:04.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Token.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Token.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Token.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Token.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Token.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAADwvycAAAAJAAAA",
+              "Title": "PayrollEngineService.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Services\\PayrollEngineService.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\Services\\PayrollEngineService.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Services\\PayrollEngineService.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\Services\\PayrollEngineService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T23:12:00.635Z",
+              "WhenOpened": "2026-01-05T02:44:11.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PayrollDetail.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\PayrollDetail.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\PayrollDetail.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\PayrollDetail.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\PayrollDetail.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowCIAAAAJAAAA",
+              "Title": "DateTimeExtensions.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Extensions\\DateTimeExtensions.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Extensions\\DateTimeExtensions.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Extensions\\DateTimeExtensions.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Extensions\\DateTimeExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T03:02:34.741Z",
+              "WhenOpened": "2026-01-05T01:42:44.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PayrollRecord.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\PayrollRecord.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\PayrollRecord.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\PayrollRecord.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\PayrollRecord.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAUwCgAAAAGAAAA",
+              "Title": "PayrollRuleBase.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\PayrollRuleBase.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Abstractions\\PayrollRuleBase.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\PayrollRuleBase.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Abstractions\\PayrollRuleBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:50:52.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Position.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Position.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Position.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Position.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Position.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAwwCAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:50:58.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Roles.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Roles.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Roles.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Roles.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowCEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T23:38:22.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shift.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Shift.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Shift.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Shift.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Shift.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAIwBwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:51:05.358Z",
+              "WhenOpened": "2026-01-05T01:38:59.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\User.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\User.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAUwFAAAAAIAAAA",
+              "Title": "RuleKPIScore.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleKPIScore.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\Rules\\RuleKPIScore.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleKPIScore.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\Rules\\RuleKPIScore.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T13:24:10.356Z",
+              "WhenOpened": "2026-01-05T01:34:18.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPayrollRule.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\IPayrollRule.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\Rules\\IPayrollRule.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\IPayrollRule.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\Rules\\IPayrollRule.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:36:50.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RuleLatePenalty.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleLatePenalty.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\Rules\\RuleLatePenalty.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleLatePenalty.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\Rules\\RuleLatePenalty.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwBcAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:00:11.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RuleOvertime.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleOvertime.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\Rules\\RuleOvertime.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\Rules\\RuleOvertime.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\Rules\\RuleOvertime.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwCAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T23:10:33.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuditableEntity.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\AuditableEntity.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Abstractions\\AuditableEntity.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\AuditableEntity.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Abstractions\\AuditableEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T01:42:36.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Abstractions\\BaseEntity.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Abstractions\\BaseEntity.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Abstractions\\BaseEntity.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T01:40:25.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Holiday.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Holiday.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Holiday.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Holiday.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Holiday.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAowD4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T03:02:14.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmployeeSalary.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeSalary.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\EmployeeSalary.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeSalary.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\EmployeeSalary.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T23:11:41.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Employee.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Employee.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Employee.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAkwGQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T22:43:59.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Department.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Department.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Department.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Department.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Department.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAowGwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T23:38:24.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "EmployeeLeaveBalance.cs",
               "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeLeaveBalance.cs",
               "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\EmployeeLeaveBalance.cs",
               "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeLeaveBalance.cs",
               "RelativeToolTip": "NovaHR.Domain\\Entities\\EmployeeLeaveBalance.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwAUAAAA3AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T03:03:24.544Z",
+              "WhenOpened": "2026-01-05T00:14:37.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "AttendanceRecord.cs",
               "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\AttendanceRecord.cs",
               "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\AttendanceRecord.cs",
               "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\AttendanceRecord.cs",
               "RelativeToolTip": "NovaHR.Domain\\Entities\\AttendanceRecord.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAqwC4AAAAIAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T22:47:52.599Z",
+              "WhenOpened": "2026-01-04T14:00:07.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Account.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Account.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Account.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Account.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Entities\\Account.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAIwAsAAAApAAAA",
+              "DocumentIndex": 12,
+              "Title": "Shift.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Shift.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Shift.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Shift.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Shift.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T13:34:48.599Z",
+              "WhenOpened": "2026-01-05T00:14:20.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuditableEntity.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\AuditableEntity.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\AuditableEntity.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\AuditableEntity.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\AuditableEntity.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAgwBkAAAARAAAA",
+              "DocumentIndex": 13,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Employee.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T03:12:58.34Z",
+              "WhenOpened": "2026-01-04T14:14:27.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\BaseEntity.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\BaseEntity.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\BaseEntity.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAiwBUAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T13:37:52.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DepartmentStatus.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\DepartmentStatus.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Enums\\DepartmentStatus.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\DepartmentStatus.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Enums\\DepartmentStatus.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:50:07.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "AttendanceRecordStatus.cs",
               "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\AttendanceRecordStatus.cs",
               "RelativeDocumentMoniker": "NovaHR.Domain\\Enums\\AttendanceRecordStatus.cs",
               "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\AttendanceRecordStatus.cs",
               "RelativeToolTip": "NovaHR.Domain\\Enums\\AttendanceRecordStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:50:05.063Z"
+              "WhenOpened": "2026-01-04T23:04:01.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountStatus.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\AccountStatus.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Enums\\AccountStatus.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\AccountStatus.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Enums\\AccountStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAOAAAA",
+              "DocumentIndex": 11,
+              "Title": "EmployeeSalary.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeSalary.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\EmployeeSalary.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\EmployeeSalary.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\EmployeeSalary.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAiwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T02:49:08.3Z"
+              "WhenOpened": "2026-01-04T14:14:36.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IAuditableEntity.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\IAuditableEntity.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\IAuditableEntity.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\IAuditableEntity.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\IAuditableEntity.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "DocumentIndex": 15,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Token.cs",
+              "RelativeDocumentMoniker": "NovaHR.Domain\\Entities\\Token.cs",
+              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Entities\\Token.cs",
+              "RelativeToolTip": "NovaHR.Domain\\Entities\\Token.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAIwFMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T13:40:47.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TokenStatus.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\TokenStatus.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Enums\\TokenStatus.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Enums\\TokenStatus.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Enums\\TokenStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T23:32:54.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ISoftDelete.cs",
-              "DocumentMoniker": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\ISoftDelete.cs",
-              "RelativeDocumentMoniker": "NovaHR.Domain\\Interfaces\\ISoftDelete.cs",
-              "ToolTip": "D:\\Project\\MyProject\\Csharp\\NovaHR\\NovaHR.Domain\\Interfaces\\ISoftDelete.cs",
-              "RelativeToolTip": "NovaHR.Domain\\Interfaces\\ISoftDelete.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T13:45:43.289Z"
+              "WhenOpened": "2026-01-04T23:02:29.573Z",
+              "EditorCaption": ""
             }
           ]
         },

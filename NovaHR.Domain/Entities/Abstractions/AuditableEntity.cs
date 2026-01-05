@@ -23,6 +23,7 @@ namespace NovaHR.Domain.Interfaces
             UpdatedAt = DateTime.UtcNow;
             UpdatedBy = userId;
         }
+        
         protected void SoftDelete(Guid deletedBy)
         {
             IsDeleted = true;

@@ -14,8 +14,8 @@ namespace NovaHR.Domain.Entities
         // 2. Quy tắc 2: Mô tả bản chất Entity
         // -------------------------
         public string Name { get; private set; } = null!;
-        public DateTime StartTime { get; private set; }
-        public DateTime EndTime { get; private set; } 
+        public TimeSpan StartTime { get; private set; }
+        public TimeSpan EndTime { get; private set; } 
         public int BreakMinutes { get; private set; }
         
         // -------------------------
@@ -31,10 +31,11 @@ namespace NovaHR.Domain.Entities
         // For EF Core
         protected Shift() { }
 
-        public Shift(string name, DateTime start, DateTime end, int breakMinutes)
+        public Shift(string name, TimeSpan start, TimeSpan end, int breakMinutes)
         {
             SetName(name);
             SetTime(start, end, breakMinutes);
+
             CreatedAt = DateTime.UtcNow;
             UpdatedAt = DateTime.UtcNow;
             IsDeleted = false;
@@ -49,17 +50,18 @@ namespace NovaHR.Domain.Entities
             UpdatedAt = DateTime.UtcNow;
         }
 
-        public void SetTime(DateTime start, DateTime end, int breakMinutes)
+        public void SetTime(TimeSpan start, TimeSpan end, int breakMinutes)
         {
             if (end <= start)
-                throw new DomainException("Giờ kết thúc phải sau giờ bắt đầu.");
-            
+                throw new DomainException("Giờ kết thúc phải sau giờ bắt đầu");
+
             if (breakMinutes < 0)
-                throw new DomainException("Thời gian nghỉ không được âm");
+                throw new DomainException("Thời gian nghỉ không hợp lệ");
 
             StartTime = start;
             EndTime = end;
             BreakMinutes = breakMinutes;
+
             UpdatedAt = DateTime.UtcNow;
         }
 

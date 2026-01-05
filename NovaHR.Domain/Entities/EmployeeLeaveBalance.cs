@@ -1,6 +1,7 @@
 ﻿using NovaHR.Domain.Exceptions;
 using NovaHR.Domain.Interfaces;
 
+
 namespace NovaHR.Domain.Entities
 {
     public class EmployeeLeaveBalance : AuditableEntity
@@ -29,14 +30,7 @@ namespace NovaHR.Domain.Entities
         // 4. Quy tắc 4: Phục vụ hành vi / nghiệp vụ
         // -------------------------
         // Hành vi trừ ngày phép khi duyệt đơn nghỉ
-        public void DeductDays(decimal days, Guid updatedBy)
-        {
-            if (days <= 0) throw new DomainException("Số ngày trừ phải > 0");
-            if (RemainingDays < days) throw new DomainException("Không đủ ngày phép");
-
-            RemainingDays -= days;
-            Touch(updatedBy);
-        }
+      
 
         // -------------------------
         // 5. Quy tắc 5: Thao tác hệ thống (Audit + Soft Delete)
@@ -59,6 +53,13 @@ namespace NovaHR.Domain.Entities
             CreatedBy = createdBy == Guid.Empty ? throw new DomainException("CreatedBy bắt buộc") : createdBy;
         }
 
-       
+        public void DeductDays(decimal days, Guid updatedBy)
+        {
+            if (days <= 0) throw new DomainException("Số ngày trừ phải > 0");
+            if (RemainingDays < days) throw new DomainException("Không đủ ngày phép");
+
+            RemainingDays -= days;
+            Touch(updatedBy);
+        }
     }
 }
